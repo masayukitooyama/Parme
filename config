@@ -1,0 +1,6 @@
+
+Host localhost
+Hostname parme
+User masayukitooyama
+port 8080
+Identityfile ~/parme/id_rsa

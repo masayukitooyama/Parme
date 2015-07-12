@@ -1,0 +1,8 @@
+DaoType=S2JDBC
+DefaultResourcePath=/Parme/src/main/resources
+DefaultRootPackage=parme
+DefaultSrcPath=/Parme/src/main/java
+ServletPath=/Parme
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1
