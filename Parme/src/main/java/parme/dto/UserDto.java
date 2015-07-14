@@ -14,5 +14,5 @@ public class UserDto implements Serializable {
 	
 	public String password;
 	
-	public void userDto(){}
+	public UserDto(){}
 }
