@@ -22,6 +22,7 @@
 	-->
 	
 	<!-- for H2 -->
+	<!--
 	<component name="xaDataSource"
 		class="org.seasar.extension.dbcp.impl.XADataSourceImpl">
 		<property name="driverClassName">
@@ -36,7 +37,7 @@
 			@org.seasar.framework.util.DriverManagerUtil@deregisterAllDrivers()
 		</destroyMethod>
 	</component>
-	
+	 -->
 	<!-- for Oracle -->
 	<!--
 	<component name="xaDataSource"
@@ -86,7 +87,7 @@
     </component>
     -->
 
-	<!-- MySQL
+	MySQL
 	- MySQL4.0以下でマルチバイト文字を扱う場合には，URL指定の後に，
 		以下の接続パラメータを追加で指定してください．
 		useUnicode=true
@@ -118,12 +119,12 @@
 			"com.mysql.jdbc.Driver"
 		</property>
 		<property name="URL">
-			"jdbc:mysql://localhost:3306/test"
+			"jdbc:mysql://localhost:3306/library"
 		</property>
-		<property name="user">"xxx"</property>
-		<property name="password">"xxx"</property>
+		<property name="user">"root"</property>
+		<property name="password">"hahahaa"</property>
 	</component>
-	-->
+	
 
 	<!-- for SQLServer -->
 	<!--

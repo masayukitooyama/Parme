@@ -6,3 +6,4 @@ ServletPath=/Parme
 ViewType=SA-Struts
 WebContentsRoot=src/main/webapp/
 eclipse.preferences.version=1
+prefs.children=library,
