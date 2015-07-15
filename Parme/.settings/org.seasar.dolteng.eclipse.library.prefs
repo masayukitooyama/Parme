@@ -1,0 +1,8 @@
+Charset=UTF-8
+ConnectionName=library
+ConnectionUrl=jdbc\:mysql\://localhost\:3306/library
+DriverClass=com.mysql.jdbc.Driver
+DriverPath=/Users/andoharuka/Documents/workspace/mysql-connector-java-5.1.7-bin.jar|
+Pass=hahahaa
+User=root
+eclipse.preferences.version=1
