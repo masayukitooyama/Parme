@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Dolteng Auto Generated</title>
 
-<link rel="stylesheet" type="text/css" href="${f:url('/css/style.css')}">
+<%-- <link rel="stylesheet" type="text/css" href='${f:url("/css/style.css")}'> --%>
 </head>
   <body>
     <div class="header">
@@ -11,9 +11,9 @@
     </div>
     <div class="leftnav">
       <ul>
-        <li> <a href="index.html">トップ画面</a></li>
-        <li> <a href="search.html">本の検索</a></li>
-        <li> <a href="mypage.html">マイページ</a></li>
+        <li> <a href="">トップ画面</a></li>
+        <li> <a href="search_book">本の検索</a></li>
+        <li> <a href="mypage">マイページ</a></li>
       </ul>
     </div>
     <div class="body">
