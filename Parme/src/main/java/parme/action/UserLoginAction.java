@@ -5,11 +5,12 @@ package parme.action;
 
 import javax.annotation.Resource;
 
-
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
 import parme.dto.UserDto;
 import parme.form.UserLoginForm;
+import parme.service.UserLoginService;
 
 /**
  * @author masayukitooyama
@@ -23,6 +24,9 @@ public class UserLoginAction {
 	
 	@Resource
 	public UserDto userDto;
+	
+	@Resource
+	public UserLoginService userLoginService;
 	
 	//ログイ画面を表示するメソッド
 	@Execute(validator = false)
