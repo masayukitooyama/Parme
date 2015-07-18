@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Dolteng Auto Generated</title>
+<title>トップ画面</title>
 
 <%-- <link rel="stylesheet" type="text/css" href='${f:url("/css/style.css")}'> --%>
 </head>
