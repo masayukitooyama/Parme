@@ -10,13 +10,14 @@ import org.seasar.framework.container.annotation.tiger.InstanceType;
  *
  */
 @Component(instance = InstanceType.SESSION)
-public class UserDto implements Serializable {
+public class UserInfoDto implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	public UserDto(){}
+	public UserInfoDto(){}
 	/** メールアドレス */
 	public String mail;
+	
 	/** パスワード */
 	public String password;
 	

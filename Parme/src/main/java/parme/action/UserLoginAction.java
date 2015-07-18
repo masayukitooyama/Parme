@@ -5,10 +5,11 @@ package parme.action;
 
 import javax.annotation.Resource;
 
+import org.seasar.framework.util.StringUtil;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import parme.dto.UserDto;
+import parme.dto.UserInfoDto;
 import parme.form.UserLoginForm;
 import parme.service.UserLoginService;
 
@@ -20,23 +21,27 @@ public class UserLoginAction {
 	
 	@ActionForm
 	@Resource
-	public UserLoginForm userLoginForm;
+	protected UserLoginForm userLoginForm;
 	
 	@Resource
-	public UserDto userDto;
+	protected UserInfoDto userInfoDto;
 	
 	@Resource
-	public UserLoginService userLoginService;
+	protected UserLoginService userLoginService;
 	
-	//ログイ画面を表示するメソッド
+	//ログイ画面
 	@Execute(validator = false)
 	public String index(){
-		return "login.jsp";
+		return "index.jsp";
 	}
-	//ログイン判定を行うメソッド
+	//ログイン判定
 	@Execute(validator = true, input = "index?redirect=true", removeActionForm=true)
-	public String login(){
-		
+	public String judgeLogin(){
+		userInfoDto.mail      = userLoginForm.mail;
+		userInfoDto.password  = userLoginForm.password;
+		if(userLoginService.isUserExist(userInfoDto.mail, userInfoDto.password)){
+			return "";
+		}
 		return "login.jsp";
 	}
 }
