@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<<<<<<< Updated upstream:Parme/src/main/webapp/WEB-INF/view/userPage/index.jsp
 <title>トップ画面</title>
+=======
+<title>Dolteng Auto Generated</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/style.css')}" />
+>>>>>>> Stashed changes:Parme/src/main/webapp/WEB-INF/view/index.jsp
 
-<%-- <link rel="stylesheet" type="text/css" href='${f:url("/css/style.css")}'> --%>
 </head>
   <body>
     <div class="header">
@@ -18,7 +22,7 @@
       </ul>
     </div>
     <div class="body">
-      <div class="content"><a href="/"><img src="../img/eyecatch.jpg" width="450" height="300"/></a></div>
+      <div class="contenwt"><a href="/"><img src="../img/eyecatch.jpg" width="450" height="300"/></a></div>
     </div>
     <div class="footer">
       <div class="rights">

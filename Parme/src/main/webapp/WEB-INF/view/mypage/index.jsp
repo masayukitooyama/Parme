@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<%-- <link rel="stylesheet" type="text/css" href="${f:url('/css/style.css')}"> --%>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/style.css')}">
+
 <title>マイページ</title>
 </head>
 <body>
