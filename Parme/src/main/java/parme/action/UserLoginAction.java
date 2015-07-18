@@ -29,12 +29,20 @@ public class UserLoginAction {
 	@Resource
 	protected UserLoginService userLoginService;
 	
-	//ログイ画面
+	/**
+	 * @return ログイン画面
+	 */
 	@Execute(validator = false)
 	public String index(){
 		return "index.jsp";
 	}
-	//ログイン判定
+	
+	/** 
+	 * ログイン判定
+	 * @return　
+	 * 　成功ならマイページへ
+	 * 　失敗ならログイン画面へ遷移
+	 */
 	@Execute(validator = true, input = "index?redirect=true", removeActionForm=true)
 	public String judgeLogin(){
 		userInfoDto.mail      = userLoginForm.mail;
