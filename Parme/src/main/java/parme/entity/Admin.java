@@ -4,55 +4,38 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/**
+ * Adminテーブル用エンティティクラス
+ * @author andoharuka
+ */
 public class Admin {
 
+	/**
+	 * ID
+	 */
 	@Id
 	@GeneratedValue
-	private String id;
-	private String name;
+	public String id;
+
+	/**
+	 * 名前
+	 */
+	public String name;
+
+	/**
+	 * 名前（カナ）
+	 */
 	@Column(name = "name_kana")
-	private String nameKana;
-	private String password;
-	private String mail;
+	public String nameKana;
 
-	public String getId() {
-		return id;
-	}
+	/**
+	 * パスワード
+	 */
+	public String password;
 
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getNameKana() {
-		return nameKana;
-	}
-
-	public void setNameKana(String nameKana) {
-		this.nameKana = nameKana;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getMail() {
-		return mail;
-	}
-
-	public void setMail(String mail) {
-		this.mail = mail;
-	}
+	/**
+	 * メールアドレス
+	 */
+	public String mail;
 
 }
